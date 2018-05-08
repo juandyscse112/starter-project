@@ -16,6 +16,7 @@ install:
   - cd ./functions && npm install && cd ..
 script:
   - cd ./client && npm test && cd ..
+  - npm run coverage
   - cd ./client && npm run build && cd ..
 deploy:
   - provider: firebase
